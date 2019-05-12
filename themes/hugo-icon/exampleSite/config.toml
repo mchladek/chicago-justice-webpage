@@ -1,14 +1,13 @@
-# Main config
-baseURL = "http://cjp.mchladek.me/"
-languageCode = "en-US"
-title = "Quantify Justice News"
+# Main config file for icon theme.
 theme = "hugo-icon"
-relativeURLs = true
+baseURL = "https://www.example.com/"
+languageCode = "en-AU"
+title = "My Awesome Title"
 
 # Metadata
 [params]
-  author = ""
-  description = "Some initial findings of the Quantify Justice News project"
+  author = "Your name"
+  description = "Cool description"
 
 # Hero section (from here on is for icon theme)
 [params.hero]
@@ -194,18 +193,18 @@ relativeURLs = true
     whatsapp = "#"
 
   # [[params.team.item]]
-    #   name = "Jason Doe"
-    #   position = "Chief haranguer"
-    #   description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
-    #   img = "images/person3.jpg"
-    #   email = "#"
-    #   telephone = "#"
-    #   facebook = "#"
-    #   twitter = "#"
-    #   dribbble = "#"
-    #   instagram = "#"
-    #   github = "#"
-    #   whatsapp = "#"
+  #   name = "Jason Doe"
+  #   position = "Chief haranguer"
+  #   description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
+  #   img = "images/person3.jpg"
+  #   email = "#"
+  #   telephone = "#"
+  #   facebook = "#"
+  #   twitter = "#"
+  #   dribbble = "#"
+  #   instagram = "#"
+  #   github = "#"
+  #   whatsapp = "#"
 
 # Contact section
 [params.contact]
@@ -229,3 +228,4 @@ relativeURLs = true
   vine = "#"
   linkedin = "#"
   instagram = "#"
+  
