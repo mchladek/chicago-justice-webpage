@@ -13,17 +13,16 @@ relativeURLs = true
 # Hero section (from here on is for icon theme)
 [params.hero]
   img = "images/hero_bg.jpg"
-  title = "Create awesome things for better web"
-  description = "Lovingly hand-crafted by the fine folks at [FreeHTML5.co](http://freehtml5.co/)"
+  title = "Map"
+  description = "Map will go here"
 
 # Navigation section
 [params.nav]
+  home = "Map"
   mission = "Our Mission"
   services = "Services"
   team = "The Team"
   contact = "Get In Touch"
-  # Include logo instead if HOME:
-  # logo = "path/to/logo"
 
 # Mission section
 [params.mission]
