@@ -1,8 +1,28 @@
-<head>
-    <title>{{ .Title }}</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="{{ .Site.Params.Description }}">
+    <meta name="author" content="{{ .Site.Params.Author }}">
+
+    <!-- Facebook & Twitter Meta -->
+    <meta name="og:type" content="website">
+    <meta name="og:site_name" content="{{ .Site.Title }}">
+    <meta name="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+    <meta name="og:url" content="{{ .Permalink }}">
+    <meta name="og:description" content=" {{ .Site.Params.Description }}">
+    <meta name="twitter:title" content="{{ .Site.Title }}">
+    <meta name="twitter:url" content="{{ .Permalink }}">
+    <meta name="twitter:card" content="">
+
+    {{ if isset .Site.Params "favicon" }}
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{ .Site }}{{ .Site.Params.Favicon }}">
+    {{ end }}
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <title>{{ .Site.Title }}</title>
 </head>

@@ -1,16 +1,28 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "http://cjp.mchladek.me/"
+languageCode = "en-US"
+title = "Quantify Justice News"
 theme = "cjp-theme"
 relativeURLs = true
 
+[params]
+  author = ""
+  description = "Some initial findings of the Quantify Justice News project"
+
 [menu]
+  [[menu.main]]
+    identifier = "map"
+    name = "Map"
+    url = "/#map"
+    weight = 100
+
+  [[menu.main]]
+    identifier = "results"
+    name = "Results"
+    url = "/#results"
+    weight = 110
+
   [[menu.main]]
     identifier = "about"
     name = "About"
-    url = "/about/"
-
-  [[menu.main]]
-    identifier = "posts"
-    name = "Posts"
-    url = "/posts/"
+    url = "/#about"
+    weight = 120
